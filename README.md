@@ -2,7 +2,10 @@
 
 ## Pre-Release
 
-Ознакомиться с видео [примером реализации бота](https://www.youtube.com/watch?v=VnSQBymw4ng)
+Ознакомиться с видео-примерами реализации бота:
+- [вишлист](https://www.youtube.com/watch?v=aRbyJH7EIL4)
+- [прогноз погоды](https://www.youtube.com/watch?v=VnSQBymw4ng)
+- [анализ резюме с Yandex GPT](https://www.youtube.com/watch?v=Dgr_x0314YA)
 
 Изучи готовый класс `ChuckNorris`. В нем можно получать шутки.
 
