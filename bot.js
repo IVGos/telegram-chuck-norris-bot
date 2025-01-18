@@ -17,7 +17,7 @@ async function main() {
 
   bot.command('joke', async (ctx) => {
     const newJoke = await ChuckNorris.getJoke();
-    currentJoke = newJoke.value
+    currentJoke = newJoke.value;
     ctx.reply(`очередная шуточка: ${newJoke.value}`);
   });
 
@@ -27,11 +27,9 @@ async function main() {
       .join('\n');
     ctx.reply(`тут список шуток:\n${jokeList}`);
   });
-  // save - добавит шутку в базу данных (В ответе должно прийти сообщение - "Шутка сохранена". Добавь возможность получения всех сохраненных шуток по команде /all.)
   bot.command('save', async (ctx) => {
-    // if allJokes
-
-
+    const jokeCount = allJokes.length 
+    if (jokeCount >= 10) allJokes.shift();
     allJokes.push({ title: currentJoke });
     await fs.writeFile('./chuck.json', JSON.stringify(allJokes, null, 2));
     ctx.reply(`записал в базу шутку ${currentJoke}`);
