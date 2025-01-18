@@ -1,0 +1,22 @@
+{
+  "name": "telegram-bot-chuck-norris",
+  "version": "1.0.0",
+  "description": "## Pre-Release",
+  "main": "ChuckNorris.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bot.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@elbrus/eslint-config": "^1.0.0",
+    "@eslint/js": "^9.18.0",
+    "eslint": "^9.18.0",
+    "globals": "^15.14.0"
+  },
+  "dependencies": {
+    "telegraf": "^4.16.3"
+  }
+}
